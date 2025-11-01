@@ -1,0 +1,17 @@
+以下两种启动方式
+
+本地启动：
+
+一、网上下载并安装MongoDB，创建数据库myAgriculture，默认端口号27017，账号root，密码无，生成集合chartdatas，引入根目录下的data.json文件到集合chartdatas下。
+
+二、项目运行前提需要下载并安装Node环境。
+
+三、运行cmd进入到web(前端)或nodejs(后端)文件夹下（以下所有的安装说明在两个文件下都一样）。
+
+四、在文件web、nodejs文件夹下执行npm install，如果安装失败可以选择阿里镜像安装 npm install -g cnpm --registry=https://registry.npm.taobao.org；然后再cpm install；
+
+五、两个文件夹下都安装成功之后，在根目录下执行start.bat即可开启项目。
+
+网页启动：
+
+一、输入网址43.138.11.133:3001

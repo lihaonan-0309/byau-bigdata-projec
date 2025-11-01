@@ -1,0 +1,83 @@
+//element-plus 公共样式
+
+//dialog公共样式
+.el-dialog {
+    background: #ffffff;
+    border-radius: 10px;
+
+    .el-dialog__header {
+        padding: 20px 30px 10px 20px;
+    }
+
+    .el-dialog__body {
+        padding: 10px 20px 20px 30px;
+        max-height: 70vh;
+        overflow-y: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .el-dialog__title {
+        font-size: 16px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #333333;
+        position: relative;
+        padding-left: 12px;
+
+        &::before {
+            content: '';
+            width: 4px;
+            height: 21px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #045AA6;
+            border-radius: 3px;
+        }
+    }
+    .el-dialog__headerbtn{
+        .el-dialog__close {
+            font-size: 18px;
+            font-weight: 700;
+            color: #3E424B;
+        }
+    }
+
+    .el-dialog__footer {
+        .el-button {
+            font-size: 12px;
+            height: 27px;
+            padding: 8px 5px;
+            min-width: 84px;
+            color: rgba(0, 0, 0, 0.85);
+            background-color: #ffffff;
+            border-radius: 3px;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            box-sizing: border-box;
+        }
+
+        .el-button+.el-button {
+            margin-left: 20px;
+        }
+
+        .sure {
+            //确定保存按钮
+            color: #ffffff;
+            background: linear-gradient(180deg, #6CB3FA 0%, #045AA6 100%);
+            box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.15);
+            border-image: linear-gradient(180deg, rgba(80, 164, 249, 1), rgba(0, 92, 255, 1)) 1 1;
+            border: 0px solid;
+        }
+
+        .el-button.is-disabled,
+        .el-button.is-disabled:focus,
+        .el-button.is-disabled:hover {
+            opacity: 0.5;
+        }
+    }
+}

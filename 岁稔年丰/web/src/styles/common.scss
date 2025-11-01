@@ -1,0 +1,21 @@
+html,body,ul{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+@mixin pageFont($fs, $c, $fw, $fa, $lh) {
+    font-size: $fs;
+    font-family: $fa;
+    font-weight: $fw;
+    color: $c;
+    line-height: $lh;
+}

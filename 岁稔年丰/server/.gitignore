@@ -1,0 +1,5 @@
+/node_modules
+/src/public/images/*
+!/src/public/images/temp.txt
+/src/public/temp/*
+!/src/public/temp/temp.txt
